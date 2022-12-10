@@ -42,3 +42,12 @@ def met_vigil(mesaj):
     return ",".join([elt for elt in mesaj])
 
 print(met_vigil(mesaj1))
+
+# 7.- kripte yon mo ak vale index li nan alfabe a
+
+mesaj2= "ALO"
+
+def crypt(mesaj: str):
+    return "-".join([str(ord(elt)-97) for elt in mesaj.lower()])
+
+print(crypt(mesaj2))
