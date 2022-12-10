@@ -1,4 +1,5 @@
 import random
+import re
 from text_unidecode import unidecode
 from slugify import slugify
 
@@ -51,3 +52,12 @@ def crypt(mesaj: str):
     return "-".join([str(ord(elt)-97) for elt in mesaj.lower()])
 
 print(crypt(mesaj2))
+
+# 8.- dekripte yon kod avek valel nan alfabe a
+
+mesaj3="0-11-14"
+
+def decrypt(mesaj:str):
+    return "".join(chr(int(elt)+97) for elt in re.findall(r'\d+',mesaj))
+
+print(decrypt(mesaj3))
