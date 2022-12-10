@@ -61,3 +61,14 @@ def decrypt(mesaj:str):
     return "".join(chr(int(elt)+97) for elt in re.findall(r'\d+',mesaj))
 
 print(decrypt(mesaj3))
+
+# 9.- pemite de(2)varyab
+
+pemite1="Bonjou"
+pemite2="Klas"
+
+def permute(var1,var2):
+    var1,var2=var2,var1
+    print(f"Pemite1 = {var1}\nPemite2 = {var2}")
+    
+permute(pemite1,pemite2)
