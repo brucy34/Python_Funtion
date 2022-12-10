@@ -70,5 +70,15 @@ pemite2="Klas"
 def permute(var1,var2):
     var1,var2=var2,var1
     print(f"Pemite1 = {var1}\nPemite2 = {var2}")
-    
+
 permute(pemite1,pemite2)
+
+
+# 10.-FOnksyon pou inisyal
+
+nom="JEAN-BAPTISTE JEAN"
+
+def inisyal(nom:str):
+    return "".join([n[0] for n in nom.replace("-"," ").split()])
+
+print(inisyal(nom)) 
