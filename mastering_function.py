@@ -63,9 +63,11 @@ pemite2="Klas"
 
 def permute(var1,var2):
     var1,var2=var2,var1
-    print(f"Pemite1 = {var1}\nPemite2 = {var2}")
+    tup = (var1,var2)
+    return tup
+    # print(f"Pemite1 = {var1}\nPemite2 = {var2}")
 
-permute(pemite1,pemite2)
+print(permute(pemite1,pemite2))
 
 
 # 10.-FOnksyon pou inisyal
